@@ -10,3 +10,16 @@ ctrl-alt-i
 ### Notes
 - in html it is acceptable to use 2 or 4 spaces for indentation just be consistent  
 - some other helpful stuff here that I forgot about
+
+### Git
+git add -u  
+//stages modifications and deletions, without new files  
+
+git add .  
+//stages new files and modifications, without deletions  
+
+git add -A  
+stages all changes (equivalent to both of the above one-liners)  
+
+git reset -- filename  
+//will unstage file filename  
