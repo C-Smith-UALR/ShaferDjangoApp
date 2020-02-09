@@ -1,25 +1,11 @@
 from django.shortcuts import render
+from .models import Post #we can just use '.' since we are directory-fellows
 #from django.http import HttpResponse
 #no longer needed cuz we use render
 
-posts = [
-    {
-        'author': 'ClarkS',
-        'title': 'Blog Post 1',
-        'content': 'First post content',
-        'date_posted': 'August 27, 2018'
-    },
-    {
-        'author': 'ClarkS',
-        'title': 'Blog Post 2',
-        'content': 'Second post content',
-        'date_posted': 'October 31, 2018'
-    },
-]
-
 def home(request):
     context = {
-        'posts': posts
+        'posts': Post.objects.all()
     }
     return render(request, 'ShaferBlog/home.html', context)
 

@@ -7,6 +7,16 @@ ctrl-alt-i
 //will correct indentation.  you may want to try  
 //it with multiple lines selected  
 
+superuser  
+clarkSmith  
+clarklander1983@gmail.com  
+ilikenice  
+
+TestUser  
+testing321  
+
+  
+
 ### Notes
 - in html it is acceptable to use 2 or 4 spaces for indentation just be consistent  
 - some other helpful stuff here that I forgot about
@@ -23,3 +33,8 @@ stages all changes (equivalent to both of the above one-liners)
 
 git reset -- filename  
 //will unstage file filename  
+
+git rm filename  
+//will remove file, assuming already removed locally  
+
+
