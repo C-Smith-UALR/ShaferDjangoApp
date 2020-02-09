@@ -45,6 +45,13 @@
     <main role="main" class="container">  <!-- this could be <section>, I guess it is 'main section' -->
         <div class="row">
             <div class="col-md-8"> <!-- this could be <article> -->
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
                 {% block content %}{% endblock %}
             </div>
             <div class="col-md-4">  <!-- this could be <aside> -->
