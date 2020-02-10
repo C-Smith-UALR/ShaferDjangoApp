@@ -16,11 +16,8 @@ clarkSmith
 clarklander1983@gmail.com  
 ilikenice  
 
-TestUser  
-testing321  
-
-NewUser  
-password321  
+testUser  
+testme123 
 
 python manage.py makemigrations  
 //will create a file in my_app/migrations directory  
