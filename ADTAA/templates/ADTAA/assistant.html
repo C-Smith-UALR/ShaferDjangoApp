@@ -1,0 +1,10 @@
+{% extends "ShaferBlog/base.html" %}
+{% block content %}
+    <h1>Academic Department Teaching Assignment Assistant</h1>
+    {% for class in UALRclasses %}
+        <h2>{{ class.title }}</h2>
+        <p>Course Number: {{ class.courseNo }}</p>
+        <p>Time: {{ class.meetingTime }}</p>
+        <p>Disciplines: {{ class.disciplines }}</p>
+    {% endfor %}
+{% endblock content %}

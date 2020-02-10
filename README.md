@@ -7,6 +7,10 @@ ctrl-alt-i
 //will correct indentation.  you may want to try  
 //it with multiple lines selected  
 
+python3 manage.py startapp my_app  
+//will create directory my_app with all the things  
+
+
 superuser  
 clarkSmith  
 clarklander1983@gmail.com  
@@ -18,7 +22,11 @@ testing321
 NewUser  
 password321  
 
+python manage.py makemigrations  
+//will create a file in my_app/migrations directory  
 
+python manage.py migrate  
+//will run migration  
   
 
 ### Notes
