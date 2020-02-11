@@ -10,6 +10,10 @@ ctrl-alt-i
 python3 manage.py startapp my_app  
 //will create directory my_app with all the things  
 
+copy and past json  
+code -> reformat code  
+//will make JSON pretty
+
 
 superuser  
 clarkSmith  

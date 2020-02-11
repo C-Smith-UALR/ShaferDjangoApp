@@ -3,3 +3,4 @@
 ShaferBlog/*.pyc
 ShaferBlog/__pycache__/admin.cpython-36.pyc
 ShaferBlog/__pycache__/models.cpython-36.pyc
+ShaferBlog/__pycache__/urls.cpython-36.pyc
