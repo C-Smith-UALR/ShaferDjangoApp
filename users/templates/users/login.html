@@ -8,9 +8,9 @@
             {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Log In</legend>
-                <!-- {{ form|crispy }} -->
-                <input type="text" name="username" placeholder="username...">
-                <input type="password" name="password" placeholder="password...">
+                {{ form|crispy }}
+               <!-- <input type="text" name="username" placeholder="username...">
+                <input type="password" name="password" placeholder="password..."> -->
             </fieldset>
             <div class="form-group">
                 <button class="btn btn-outline-info" type="submit">Login</button>

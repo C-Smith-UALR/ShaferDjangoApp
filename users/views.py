@@ -21,28 +21,21 @@ def register(request):
 
     return render(request, 'users/register.html', {'form': form})
 
-def loginPage(request):
-    if request.method == 'POST':
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        user = authenticate(request, username=username, password=password)
-
-        if user:
-            login(request, user)
-            return redirect('blog-home')
-
-
-        else:
-            messages.info(request, 'User does not exist or is not active')
-
-
-
-
-
-
-
-    context={}
-    return render(request, 'users/login.html', context)
+# def loginPage(request):
+#     if request.method == 'POST':
+#         username = request.POST.get('username')
+#         password = request.POST.get('password')
+#         user = authenticate(request, username=username, password=password)
+#
+#         if user:
+#             login(request, user)
+#             return redirect('blog-home')
+#
+#
+#         else:
+#             messages.info(request, 'User does not exist or is not active')
+#     context={}
+#     return render(request, 'users/login.html', context)
 
 @login_required #this is a decorator
 def profile(request):
