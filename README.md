@@ -31,6 +31,9 @@ python manage.py makemigrations
 
 python manage.py migrate  
 //will run migration  
+
+pip freeze  
+//will display list of packages  
   
 
 ### Notes
