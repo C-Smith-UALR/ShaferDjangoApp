@@ -18,10 +18,13 @@ code -> reformat code
 superuser  
 clarkSmith  
 clarklander1983@gmail.com  
-ilikenice  
+ilovehoteps  
 
 testUser  
 testme123 
+
+KingSolomon  
+wisdomihasit  
 
 python manage.py makemigrations  
 //will create a file in my_app/migrations directory  
